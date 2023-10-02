@@ -1,4 +1,16 @@
 .button {
-    font-size: 20px;
-  }
-  
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: perspective(500px) rotateX(0deg);
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: perspective(500px) rotateX(-20deg);
+}

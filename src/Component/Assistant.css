@@ -1,10 +1,13 @@
 .assistant {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    font-size: 30px;
-    transition: all 0.3s ease-in-out;
-  }
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transform: perspective(500px) rotateX(30deg);
+  transition: transform 0.3s ease-in-out;
+}
 
-  
+.assistant:hover {
+  transform: perspective(500px) rotateX(0);
+}
